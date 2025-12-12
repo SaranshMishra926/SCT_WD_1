@@ -1,0 +1,130 @@
+.hero {
+  padding: 140px 24px 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  align-items: center;
+}
+
+.hero__content h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  margin-bottom: 16px;
+}
+
+.hero__content .lede {
+  color: var(--muted);
+  max-width: 540px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.hero__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.hero__meta strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.hero__meta span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  padding: 22px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pill--blue {
+  background: rgba(72, 198, 239, 0.12);
+}
+
+.pill--pink {
+  background: rgba(255, 111, 184, 0.12);
+}
+
+.pill--violet {
+  background: rgba(155, 107, 255, 0.12);
+}
+
+.progress {
+  margin: 12px 0 8px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(120deg, var(--blue), var(--accent));
+  border-radius: inherit;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding-top: 120px;
+  }
+}
+

@@ -1,0 +1,24 @@
+.footer {
+  padding: 28px 24px 40px;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer__links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.footer__links a {
+  color: var(--text);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.footer__links a:hover {
+  opacity: 1;
+}
+

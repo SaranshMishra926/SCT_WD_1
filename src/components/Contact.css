@@ -1,0 +1,49 @@
+.contact {
+  padding: 90px 24px;
+}
+
+.contact__card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(120deg, rgba(72, 198, 239, 0.12), rgba(255, 111, 184, 0.12));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  box-shadow: var(--shadow);
+}
+
+.contact__form {
+  display: grid;
+  gap: 12px;
+}
+
+.input-group {
+  display: grid;
+  gap: 6px;
+}
+
+.input-group label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: inherit;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+

@@ -1,0 +1,64 @@
+.card--outline {
+  background: transparent;
+}
+
+.card--featured {
+  background: linear-gradient(135deg, rgba(124, 123, 255, 0.18), rgba(255, 111, 184, 0.14));
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Heavy responsive animations on click */
+.card--clicked {
+  animation: cardPulse 0.6s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(124, 123, 255, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.card--selected {
+  transform: scale(1.02);
+  border-color: rgba(124, 123, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(124, 123, 255, 0.3);
+}
+
+@keyframes cardPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08) rotate(1deg);
+    box-shadow: 0 30px 70px rgba(124, 123, 255, 0.6);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.card {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.3s ease, 
+              border 0.3s ease,
+              background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.card button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card--clicked button {
+  animation: buttonBounce 0.5s ease;
+}
+
+@keyframes buttonBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
