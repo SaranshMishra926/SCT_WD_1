@@ -205,6 +205,14 @@ This project is open source and available for personal and commercial use.
 
 ## 🙏 Credits
 
-- Font: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) by Google Fonts
-- Built with [React](https://react.dev/) and [Vite](https://vitejs.dev/)
-"# SCT_WD_1" 
+Designed & Developed by: Saransh Mishra
+as part of the UI/UX Internship Program at SkillCraft Technology
+Fonts: Space Grotesk
+Built using React + Vite
+
+🚀 Final Note
+
+This project reflects my learning journey in modern UI development, focusing on clean design, component architecture, and smooth user experiences.
+I hope you like it — feedback is always welcome!
+
+– Saransh Mishra
